@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../Portfolio Project/img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Cristiano</span><br>Ronaldo from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ........ about.......... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="img/Goat 77.jpeg" alt="">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Software engineering is the branch of computer science that deals with the design, development, testing, and maintenance of software applications. Software engineers apply engineering principles and knowledge of programming languages to build software solutions for end users.</p>
+
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>Linux</span><br>Design Web/App Interfaces</li>
+                            <li><span>Web Development</span><br> WebApp Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS App</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Al-Nassr</li>
+                            <li><span>2020-2023</span><br>Man United</li>
+                            <li><span>2019-2020</span><br>Juventus</li>
+                            <li><span>2017-2019</span><br>Real Madrid</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>EastBengal Fc Academy</li>
+                            <li><span>2016</span><br>As Roma Ground</li>
+                            <li><span>2014</span><br>Sporting Lisbon Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Services---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Service</h1>
+            <div class="services_list">
+                <div>   
+                    <span class="material-symbols-outlined">
+                        code_off
+                        </span>
+                    <h2>Left Winger</h2>
+                    <p>Ronaldo's career is filled with numerous goals and highlights from his time as a left winger, making him one of the most prolific and exciting players to watch in that position.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        travel_explore
+                        </span>
+                    <h2>Right Winger</h2>
+                    <p>Cr7 goal against Juv in the UCL quarterfinals is one of the most iconic moments in football history.This goal is often cited as one of the greatest in UCL history and showcased Cr7 incredible athleticism and skill.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        picture_in_picture
+                        </span>
+                    <h2>Midfielder</h2>
+                    <p>During his time at MUFC, Cr7 primarily played as a winger, but he occasionally took on the role of an attacking midfielder, His contributions from midfield have often involved orchestrating attacks, assisting goals, and occasionally scoring from deeper positions on the pitch.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Portfolio----------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="../Portfolio Project/img/cris1.jpg">
+                    <div class="layer">
+                        <h3>Ballon D'Or</h3>
+                        <p>Ronaldo is widely regarded one of the best players of this generation,.Winning his first Ballon d'Or in 2008 by a record-high vote count at age 23.He won total 5 Ballon D'or</p>
+                        <a href="#"><span class="material-symbols-outlined">
+                            sports_bar
+                            </span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../Portfolio Project/img/jpg 2.jpg">
+                    <div class="layer">
+                        <h3>Champions League</h3>
+                        <p>Ronaldo finished as the top scorer in the competition in each of the five seasons he lifted the trophy, first with Sir Alex Ferguson's Manchester United and then four times with Madrid.</p>
+                        <a href="#"><span class="material-symbols-outlined">
+                            sports_bar
+                            </span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../Portfolio Project/img/jpg 1 (2).jpg">
+                    <div class="layer">
+                        <h3>Trophy</h3>
+                        <p>He has won 33 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League.</p>
+                        <a href="#"><span class="material-symbols-outlined">
+                            sports_bar
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="myBtn">See More</a>
+        </div>
+    </div>
+
+    <!--------- Contact --------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p><span class="material-symbols-outlined">
+                        mark_as_unread
+                        </span> ronaldo@realmadrid.com</p>
+                    <p> <span class="material-symbols-outlined">
+                        call
+                        </span> 8100084690</p>
+                    <div class="social_icons">
+                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                     <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="../Portfolio Project/img/my-cv.pdf" download class="myBtn btn">Download Cv</a>
+                </div>
+                <div class="contact_right">
+              <form class="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Massege"></textarea>
+                <button type="submit" class="myBtn btn">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+        </div>
+     </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Cristiano Ronaldo.Made with by <span class="material-symbols-outlined">
+            pets
+            </span> Amit Debnath</p>
+        </div>
+    </div>
+
+    <script src="port.js"></script>
+</body>
+</html>
